@@ -24,9 +24,11 @@ while continue_game:
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
+
+    shift %= 26
     caesar(direction, text, shift)
     
-    again = input("Do you want to continue? pres yes or any keys to exit ")
+    again = input("Do you want to continue? pres yes or any keys to exit ").lower()
 
     if again != 'yes':
         print("Goodbye!!")
