@@ -18,11 +18,8 @@ while len(guessed_state) < 50:
                                     prompt="What's another state's name?")
 
     if answer_state.title() == "Exit":
-        missing_states = []
-        for state in states:
-            if state not in guessed_state:
-                missing_states.append(state)
-        print(missing_states)
+        missing_states = [state for state in states if state not in guessed_state]
+        #print(missing_states)
         new_data = pd.DataFrame(missing_states)
         new_data.to_csv("missingStates.txt")
         break
@@ -30,7 +27,7 @@ while len(guessed_state) < 50:
         guessed_state.append(answer_state.title())
         state_d = answer_state.title()
         coordinates = data[data["state"] == answer_state.title()]
-        print(coordinates)
+        #print(coordinates)
         t = turtle.Turtle()
         t.hideturtle()
         t.penup()
