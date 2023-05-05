@@ -36,7 +36,7 @@ data_dict2 = {row.letter: row.code for (index, row) in df.iterrows()}
 print(data_dict2)
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 
-world = input("please write you Word \n")
+world = input("please write you World \n")
 for letter in world:
     print(data_dict2[letter.upper()])
 
