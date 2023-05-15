@@ -1,2 +1,2 @@
 # 100-Days-of-Code
-100 Days of Code: The Complete Python Pro Bootcamp for 2023
+After a few months without coding in Python, I have made the decision to revise and refresh my Python skills. This repository houses my capstone projects from the "100 Days of Code" course on Udemy.
