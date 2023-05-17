@@ -33,12 +33,19 @@ for (index, row) in df.iterrows():
 print(data_dict)
 
 data_dict2 = {row.letter: row.code for (index, row) in df.iterrows()}
-print(data_dict2)
+#print(data_dict2)
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 
-world = input("please write you World \n")
-for letter in world:
-    print(data_dict2[letter.upper()])
+def generate_phonetic():
+    world = input("Please write you World. \n")
+    # for letter in world:
+    #     print(data_dict2[letter.upper()])
 
-world_nato = [data_dict2[letter.upper()] for letter in world]
-print(world_nato)
+    try:
+        world_nato = [data_dict2[letter.upper()] for letter in world]
+    except KeyError:
+        print("Only letter in alaphabe can be interpreted.")
+        generate_phonetic()
+    else:
+        print(world_nato)
+generate_phonetic()
