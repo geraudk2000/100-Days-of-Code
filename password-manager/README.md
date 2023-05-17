@@ -1,2 +1,2 @@
-# 100-Days-of-Code
-After a few months without coding in Python, I have made the decision to revise and refresh my Python skills. This repository houses my capstone projects from the "100 Days of Code" course on Udemy.
+![image](https://github.com/geraudk2000/100-Days-of-Code/assets/2753399/702d9b75-43f9-46bc-96fb-fd2cb442ea25)
+
