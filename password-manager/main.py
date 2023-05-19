@@ -61,7 +61,7 @@ def search():
         with open("data.json", "r") as data_file:
             data = json.load(data_file)
     except(FileNotFoundError, json.decoder.JSONDecodeError):
-        messagebox.showinfo(title="Oops", message="No entry found for this website")
+        messagebox.showinfo(title="Oops", message="No Data file found.")
     else:
         if data.get(website):
             messagebox.showinfo(title="your key", message=f" Email: {data[website]['email']} \n"
